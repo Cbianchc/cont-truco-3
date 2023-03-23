@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./scripts/index.js" defer type="module"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Contador de truco</title>
+</head>
+<body>
+	<h1>Contador de Truco</h1>
+	<div id="jugadoresContainer">
+		<div id="jugador1Container" class="jugadorContainer">
+			<h2></h2>
+			<div class="cuenta"></div>
+			<div class="botonesJugador">
+				<button class="agregar">+</button>
+				<button class="restar">-</button>
+			</div>	
+		</div>
+		<div id="jugador2Container" class="jugadorContainer">
+			<h2></h2>
+			<div class="cuenta"></div>
+			<div class="botonesJugador">
+				<button class="agregar">+</button>
+				<button class="restar">-</button>
+			</div>	
+		</div>
+	</div>
+	<button id="reset">Reiniciar</button>
+	<dialog type="modal">
+		<p>¿Seguro que queres reiniciar el juego?</p>
+		<button id="aceptar">Reiniciar juego</button>
+		<button id="volver">Seguir</button>
+	</dialog>
+
+	<footer class="footer">
+		<button id="boton-reglas">Ver reglas de truco</button>
+		<dialog id="modal-reglas" type="modal"></dialog>
+</body>
+</html>
